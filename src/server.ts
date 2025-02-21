@@ -5,6 +5,7 @@ import { fastifySwagger } from '@fastify/swagger'
 import { fastifySwaggerUi } from '@fastify/swagger-ui'
 
 import { subscribeRoute } from './routes/subscribe-routes'
+import { env } from './env-validation'
 
 
 /** Fastify init */
@@ -35,6 +36,6 @@ app.register(fastifySwaggerUi, {
 
 app.register(subscribeRoute)
 
-app.listen({ port: 3333 }).then(() => {
-    console.log('HTTP server running!')
+app.listen({ port: env.PORT }).then(() => {
+    console.log(`HTTP server running on port ${env.PORT}`)
 })
