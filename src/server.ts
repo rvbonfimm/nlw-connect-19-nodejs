@@ -10,6 +10,7 @@ import {
 } from 'fastify-type-provider-zod'
 
 import { env } from './env-validation'
+import { accessToEventLinkRoute } from './routes/access-to-event-link'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-routes'
 
 /** Fastify init */
@@ -39,6 +40,7 @@ app.register(fastifySwaggerUi, {
 })
 
 app.register(subscribeToEventRoute)
+app.register(accessToEventLinkRoute)
 
 app.listen({ port: env.PORT }).then(() => {
   console.log(`HTTP server running on port ${env.PORT}`)
