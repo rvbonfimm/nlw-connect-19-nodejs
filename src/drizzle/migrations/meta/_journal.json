@@ -8,6 +8,20 @@
       "when": 1740245139743,
       "tag": "0000_jazzy_living_tribunal",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1740248206343,
+      "tag": "0001_illegal_switch",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1740248678038,
+      "tag": "0002_special_charles_xavier",
+      "breakpoints": true
     }
   ]
 }
