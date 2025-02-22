@@ -2,6 +2,9 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Rogerio Vilela",
-    "email": "rogeriovilelabonfim@gmai.com"
+    "name": "Roger Feder",
+    "email": "roger@live.com"
 }
+
+###
+GET http://localhost:3333/invites/roger123
