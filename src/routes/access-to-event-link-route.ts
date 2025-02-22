@@ -8,10 +8,10 @@ export const accessToEventLinkRoute: FastifyPluginAsyncZod = async app => {
     '/invites/:subscriberId',
     {
       schema: {
-        summary: 'Subscribes someone to the event',
+        summary: 'Link invitation to summarize the invites',
         description:
           'A better description about the subscription functionality',
-        tags: ['Subscription'],
+        tags: ['referral'],
         params: z.object({
           subscriberId: z.string(),
         }),
