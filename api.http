@@ -2,9 +2,22 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Roger Feder",
-    "email": "roger@live.com"
+    "name": "Tester 3",
+    "email": "tester3@live.com",
+    "referrerId": "c20b0bb0-78b2-45d1-adca-f79281f8bf39"
 }
 
 ###
-GET http://localhost:3333/invites/roger123
+GET http://localhost:3333/invites/c20b0bb0-78b2-45d1-adca-f79281f8bf39
+
+###
+GET http://localhost:3333/subscribers/c20b0bb0-78b2-45d1-adca-f79281f8bf39/ranking/clicks
+
+###
+GET http://localhost:3333/subscribers/c20b0bb0-78b2-45d1-adca-f79281f8bf39/ranking/count
+
+###
+GET http://localhost:3333/subscribers/c20b0bb0-78b2-45d1-adca-f79281f8bf39/ranking/position
+
+###
+GET http://localhost:3333/subscribers/ranking
