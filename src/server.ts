@@ -10,7 +10,7 @@ import {
 } from 'fastify-type-provider-zod'
 
 import { env } from './env-validation'
-import { accessToEventLinkRoute } from './routes/access-to-event-link'
+import { accessToEventLinkRoute } from './routes/access-to-event-link-route'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-routes'
 
 /** Fastify init */
