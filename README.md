@@ -28,7 +28,6 @@ Fastify:
 - npm i @fastify/cors
 - npm i fastify-type-provider-zod
 - npm i @fastify/swagger @fastify/swagger-ui
-- npm i @fastify/swagger @fastify/swagger-ui
 
 Biome:
 - npm i @biomejs/biome -D
